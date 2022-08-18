@@ -1,0 +1,296 @@
+DOCUMENTACION DEL  EJERCICIO DE PRACTICA EN CASA(Ya tengo un repositorio Creado https://github.com/miguedavidcs/SemilleroHeinsohnGitPrueba.git)
+1-Creamos un CARPETA EN ESTE CASO EL ESCRITORIO (Projecto red Social->Docente de Diseño Web Miguel Castaño)
+1.1.Esta carpeta contiene 5 archivos
+        - index.html(Estructura de la red social)
+        - estilo.css(Estructura Complementaria del archivo index.Html)
+        - Contine un archivo (.gitignore) el cual bloquea:
+          index.php y ProcesoGIT.html 
+1.2. Estoy utilizando GIT desde LA TERMINAL de VisualStudioCode.
+        -Iniciamos a ver como funciona el .gitignore 
+
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest
+        $ git init
+        Initialized empty Git repository in C:/Users/Usuario/OneDrive/Escritorio/RedSocialGitTest/.git/
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)
+        $ git status
+        On branch master
+        
+        No commits yet
+        
+        Untracked files:
+          (use "git add <file>..." to include in what will be committed)
+                .gitignore
+                estilo.css
+                index.html
+        
+        nothing added to commit but untracked files present (use "git add" to track)       
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git status
+        On branch master
+        
+        No commits yet
+        
+        Untracked files:
+          (use "git add <file>..." to include in what will be committed)
+                .gitignore
+                estilo.css
+                index.html
+                index.php
+        
+        nothing added to commit but untracked files present (use "git add" to track)       
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git status
+        On branch master
+        
+        No commits yet
+        
+        Untracked files:
+          (use "git add <file>..." to include in what will be committed)
+                .gitignore
+                estilo.css
+                index.html
+        
+        nothing added to commit but untracked files present (use "git add" to track)
+ 1.3 Vamos a agregar estos archivos al repositorio.
+
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)
+        $ git status
+        On branch master
+ 
+        No commits yet
+ 
+         Untracked files:
+        (use "git add <file>..." to include in what will be committed)
+         .gitignore
+         estilo.css
+         index.html
+ 
+         nothing added to commit but untracked files present (use "git add" to track)       
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git add estilo.css
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git add index.html
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git add .
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git status
+        On branch master
+ 
+        No commits yet
+ 
+        Changes to be committed:
+   (    use "git rm --cached <file>..." to unstage)
+            new file:   .gitignore
+            new file:   estilo.css
+            new file:   index.html
+ 
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+         $ git commit "Primer Commit para ejercios 1.3 del archivo ProcesoGIT.html"
+        error: pathspec 'Primer Commit para ejercios 1.3 del archivo ProcesoGIT.html' did not match any file(s) known to git
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git commit "Primer Commit "
+        error: pathspec 'Primer Commit ' did not match any file(s) known to git
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git commit -m "first commit"
+        [master (root-commit) e42fb0f] first commit
+        3 files changed, 604 insertions(+)
+        create mode 100644 .gitignore
+        create mode 100644 estilo.css
+        create mode 100644 index.html
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git branch -M master
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git remote add origin https://github.com/miguedavidcs/SemilleroHeinsohnGitPrueba.git
+ 
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git push -u origin master
+        Enumerating objects: 5, done.
+        Counting objects: 100% (5/5), done.
+        Delta compression using up to 4 threads
+        Compressing objects: 100% (4/4), done.
+        Writing objects: 100% (5/5), 3.94 KiB | 1009.00 KiB/s, done.
+        Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+        To https://github.com/miguedavidcs/SemilleroHeinsohnGitPrueba.git
+            * [new branch]      master -> master
+        branch 'master' set up to track 'origin/master'.
+ 
+         Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $
+    Nota ya lo tenia configurado en los comandos git global pero los pasos seran asi 
+        $git init (inicial la carpeta oculta en el archivo local)
+        $git status (mira el estado de tu repositorio local )
+        $git config --global --add usuario.nombre (sin parentesis colocar nombre usuario del repositorio )
+        $git config --global --add usuario.email (sin parentesis colocar el correo del repositorio)
+        $git commit -m "Escribe un comentario entre comillas"
+        $git branch -M master (indica la rama en la que estamos trabajando en este caso la master)
+        $git remote add origin https:// ( colocamos la url del repositorio).
+        $git push -u origin master (Sube el proyecto al repositorio con sus ultimas modificaciones.)
+    
+    Siquiendo los procesos.
+        2.Tengo unos ejercios aqui el tipico cuando actualizo algun archivo.
+        
+            Usuario@xxxxxxxx ~/OneDrive/Escritorio/RedSocialGitTest (master)
+            $ git status
+            On branch master
+            Your branch is up to date with 'origin/master'.
+        
+            Changes not staged for commit:
+                 (use "git add <file>..." to update what will be committed)
+                (use "git restore <file>..." to discard changes in working directory)
+                        modified:   .gitignore
+                        modified:   estilo.css
+        
+                no changes added to commit (use "git add" and/or "git commit -a")
+        2.1 Agregamos un cambio por medio del repositorio remoto en el index.html 
+        2.2 Agregamos un Cambio en el repositorio local en el estilo.css y gitignore
+        
+               Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+               $ git add .
+               
+               Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+               $ git status
+               On branch master
+               Your branch is up to date with 'origin/master'.
+               
+               Changes to be committed:
+                 (use "git restore --staged <file>..." to unstage)
+                       modified:   .gitignore
+                       modified:   estilo.css
+        
+               usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+               $ git commit -m "segundo commit"
+                [master 7f2c83f] segundo commit
+                2 files changed, 2 insertions(+), 7 deletions(-)
+        2.3 Veamos un Historial de lo que ha paso con este comando
+        
+                Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+                $ git log
+                commit e42fb0f7bd452cde7c7d40c2be171b41721c0849 (HEAD -> master, origin/master)
+                Author: migueldavidcs <midacasa17@gmail.com>
+                Date:   Thu Aug 18 14:38:19 2022 -0500
+        
+                Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+                $ git pull
+                remote: Enumerating objects: 5, done.
+                remote: Counting objects: 100% (5/5), done.
+                remote: Compressing objects: 100% (3/3), done.
+                remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+                Unpacking objects: 100% (3/3), 752 bytes | 9.00 KiB/s, done.
+                From https://github.com/miguedavidcs/SemilleroHeinsohnGitPrueba
+                   e42fb0f..ae3f39b  master     -> origin/master
+                Merge made by the 'ort' strategy.
+                 index.html | 4 ++--
+                 1 file changed, 2 insertions(+), 2 deletions(-)
+                    first commit
+        
+                Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+                    $ git push
+                    Enumerating objects: 12, done.
+                    Counting objects: 100% (10/10), done.
+                    Delta compression using up to 4 threads
+                    Compressing objects: 100% (5/5), done.
+                    Writing objects: 100% (6/6), 693 bytes | 346.00 KiB/s, done.
+                    Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+                    remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+                    To https://github.com/miguedavidcs/SemilleroHeinsohnGitPrueba.git
+                       ae3f39b..16a4260  master -> master
+        2.4 volvemos hacer lo mismo pero ahora voy ha desactivar o copiar y pegar comentario que deje en index.html de manera local pero primero vemos el historial 
+              Historial
+            Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git log
+              commit 16a4260da2d601c13d3628f39340c03f06ad2200 (HEAD -> master, origin/master)
+        Merge: 7f2c83f ae3f39b
+        Author: migueldavidcs <midacasa17@gmail.com>
+        Date:   Thu Aug 18 15:14:24 2022 -0500
+        
+            Merge branch 'master' of https://github.com/miguedavidcs/SemilleroHeinsohnGitPrueba
+        
+              commit 7f2c83fa0caa16f9435e5c2d1972c1a39157773c
+        Author: migueldavidcs <midacasa17@gmail.com>
+        Date:   Thu Aug 18 15:10:01 2022 -0500
+        // AQQUI PASA UNA VAINA ESCRIBIR :WQ (Write Quiet)
+        :
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git status
+        On branch master
+        Your branch is up to date with 'origin/master'.
+        
+        Changes not staged for commit:
+          (use "git add <file>..." to update what will be committed)
+          (use "git restore <file>..." to discard changes in working directory)
+                modified:   index.html
+        
+        no changes added to commit (use "git add" and/or "git commit -a")
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git add .
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git pull
+        Already up to date.
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git push
+        Everything up-to-date
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git status
+        On branch master
+        Your branch is up to date with 'origin/master'.
+        
+        Changes to be committed:
+          (use "git restore --staged <file>..." to unstage)
+                modified:   index.html
+        
+        
+        Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git add .
+        
+        Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git status
+        On branch master
+        Your branch is up to date with 'origin/master'.
+        
+        Changes to be committed:
+          (use "git restore --staged <file>..." to unstage)
+                modified:   index.html
+        
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git commit "cambio pequeño en index.html"
+        error: pathspec 'cambio pequeño en index.html' did not match any file(s) known to git
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git commit -m "tercer commit"
+        [master f992812] tercer commit
+         1 file changed, 1 insertion(+)
+        
+        Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $  git remote add upstream https://github.com/miguedavidcs/SemilleroHeinsohnGitPrueba.git
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $ git push
+        Enumerating objects: 5, done.
+        Counting objects: 100% (5/5), done.
+        Delta compression using up to 4 threads
+        Compressing objects: 100% (3/3), done.
+        Writing objects: 100% (3/3), 287 bytes | 143.00 KiB/s, done.
+        Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+        remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+        To https://github.com/miguedavidcs/SemilleroHeinsohnGitPrueba.git
+           16a4260..f992812  master -> master
+        
+        Usuario@xxxxxxxx MINGW64 ~/OneDrive/Escritorio/RedSocialGitTest (master)    
+        $
